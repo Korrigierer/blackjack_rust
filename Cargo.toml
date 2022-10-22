@@ -1,0 +1,12 @@
+[package]
+name = "blackjack"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.8.5"
+strum = "0.24.1"
+strum_macros = "0.24.3"
+dialoguer = "0.10.2"
