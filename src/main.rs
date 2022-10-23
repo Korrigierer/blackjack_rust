@@ -164,7 +164,7 @@ fn main() {
     loop {
         user_cards.print_cards(Players::YOU);
         let sum = user_cards.get_sum();
-        println!("SUMME: {sum}\n");
+        println!("SUM: {sum}\n");
         if sum >= 21 {
             break;
         }
@@ -180,10 +180,10 @@ fn main() {
     }
 
     dealer_cards.print_cards(Players::DEALER);
-    println!("SUMME DEALER: {}\n", dealer_cards.get_sum());
+    println!("SUM DEALER: {}\n", dealer_cards.get_sum());
 
     user_cards.print_cards(Players::YOU);
-    println!("SUMME SPIELER: {}\n", user_cards.get_sum());
+    println!("SUM PLAYER: {}\n", user_cards.get_sum());
 
     let winner = get_winner(user_cards.get_sum(), dealer_cards.get_sum());
     print!("{winner} won the game!");
